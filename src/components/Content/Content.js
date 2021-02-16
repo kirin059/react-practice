@@ -11,9 +11,12 @@ class Content extends Component {
                 </li>,
             );
         }
+        const style = {
+            fontSize: "20px",
+        };
         return (
             <main>
-                <ul>{lists}</ul>
+                <ul style={style}>{lists}</ul>
             </main>
         );
     }
