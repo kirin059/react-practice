@@ -3,9 +3,9 @@ import { Component } from "react";
 class Input extends Component {
     render() {
         const style = {
-            display: "flex",
-            justifyContents: "center",
+            display: "inline",
             fontSize: "15px",
+            textAlign: "center",
         };
         return (
             <div className="Input">

@@ -7,11 +7,13 @@ class Header extends Component {
             height: "auto",
             color: "aqua",
             backgroundColor: "black",
-            fontSize: "80px",
+            fontSize: "70px",
         };
         return (
             <div className="Header">
-                <h1 style={style}>{this.props.title}</h1>
+                <h1 style={style}>
+                    <a href="/">{this.props.title}</a>
+                </h1>
             </div>
         );
     }
