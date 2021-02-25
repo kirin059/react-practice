@@ -1,11 +1,12 @@
 import React, { Component } from "react";
+import Modal from "../../components/Modal/Modal";
 
-import "./Modal.scss";
+import "./Login.scss";
 
-class Modal extends Component {
+class Login extends Component {
     render() {
         return (
-            <div className="modal">
+            <div className="login">
                 <div className="back">
                     <h1>sign up</h1>
                     <label for="name">
@@ -22,10 +23,10 @@ class Modal extends Component {
                     </label>
                 </div>
 
-                <div className="modalContainer"></div>
+                <Modal />
             </div>
         );
     }
 }
 
-export default Modal;
+export default Login;

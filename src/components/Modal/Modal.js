@@ -2,7 +2,7 @@ import { Component } from "react";
 
 import "./Modal.scss";
 
-class Input extends Component {
+class Modal extends Component {
     render() {
         return (
             <div className="modal">
@@ -13,4 +13,4 @@ class Input extends Component {
     }
 }
 
-export default Input;
+export default Modal;
