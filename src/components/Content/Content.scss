@@ -1,0 +1,29 @@
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .listContainer {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 700px;
+        padding: 10px;
+        background-color: white;
+        border: 1px solid rosybrown;
+        border-radius: 5px;
+        .input {
+            display: flex;
+            justify-content: space-between;
+            input {
+                width: 85%;
+                height: 20px;
+            }
+            button {
+                color: #fafafa;
+                background-color: green;
+                border: 1px solid green;
+                border-radius: 5px;
+            }
+        }
+    }
+}

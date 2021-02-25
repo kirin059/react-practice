@@ -1,23 +1,18 @@
 import { Component } from "react";
 
+import "./Content.scss";
+
 class Content extends Component {
     render() {
-        let data = this.props.data;
-        let lists = [];
-        for (let i = 0; i < data.length; i++) {
-            lists.push(
-                <li key={data[i].id}>
-                    <a href={"/content/" + data[i].id}> {data[i].title}</a>
-                </li>,
-            );
-        }
-        const style = {
-            fontSize: "20px",
-        };
         return (
-            <main>
-                <ul style={style}>{lists}</ul>
-            </main>
+            <div className="content">
+                <div className="listContainer">
+                    <div className="input">
+                        <input type="text" placeholder="write your list" />
+                        <button>Click</button>
+                    </div>
+                </div>
+            </div>
         );
     }
 }
