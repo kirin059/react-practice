@@ -1,7 +1,20 @@
 .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
     background: #f0e7e7cc;
-    .back {
-        display: flex;
-        flex-direction: column;
+    h1 {
+        color: saddlebrown;
+        font-size: 80px;
+    }
+    button {
+        width: 100px;
+        height: 40px;
+        background-color: salmon;
+        font-size: 20px;
+        border: 2px solid rgb(102, 43, 37);
+        border-radius: 5px;
     }
 }
