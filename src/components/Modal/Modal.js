@@ -7,8 +7,8 @@ class Modal extends Component {
         return (
             <div className="modal">
                 <div className="modal-container" id="modal">
-                    <button id="close">
-                        <i className="fa fa-times"></i>
+                    <button id="closeBtn">
+                        <i className="fa fa-times"></i>X
                     </button>
                     <div class="modal-content">
                         <p>Register with us</p>

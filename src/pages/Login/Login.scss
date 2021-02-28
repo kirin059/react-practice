@@ -5,16 +5,39 @@
     width: 100vw;
     height: 100vh;
     background: #f0e7e7cc;
+    .active {
+        color: skyblue;
+    }
+    .inactive {
+        color: orange;
+    }
     h1 {
         color: saddlebrown;
         font-size: 80px;
     }
-    button {
-        width: 100px;
+    .headerBtn {
+        width: 200px;
         height: 40px;
+        color: #fafafa;
         background-color: salmon;
         font-size: 20px;
         border: 2px solid rgb(102, 43, 37);
         border-radius: 5px;
+    }
+    .loginBtn {
+        margin-top: 20px;
+        width: 200px;
+        height: 40px;
+        color: #fafafa;
+        background-color: rgb(147, 8, 165);
+        font-size: 20px;
+        border: 2px solid rgb(61, 4, 66);
+        border-radius: 5px;
+    }
+    .openModal {
+        visibility: visible;
+    }
+    .closeModal {
+        visibility: hidden;
     }
 }

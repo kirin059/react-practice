@@ -1,0 +1,13 @@
+.commentList {
+    li {
+        background-color: yellowgreen;
+        span {
+            &:first-child {
+                margin-right: 30px;
+            }
+            &:last-child {
+                margin-left: 30px;
+            }
+        }
+    }
+}
