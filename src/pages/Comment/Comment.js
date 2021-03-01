@@ -42,10 +42,14 @@ class Comment extends Component {
                 <h1>Comment your opinion</h1>
                 <ul>
                     {this.state.commentData.map((comment) => {
-                        return <CommentList key={comment.id} username={comment.username} content={comment.content} isLiked={comment.isLiked} />;
+                        return <CommentList 
+                        key={comment.id}   {/* key는 map함수를 돌리는 부분에서만 작성해주기 */}
+                        username={comment.username} 
+                        content={comment.content} 
+                        isLiked={comment.isLiked} 
+                        />;
                     })}
-                    {/* key는 map함수를 돌리는 부분에서만 작성해주기 */}
-
+                   
                     {/* {this.state.commentData.map((comment) => {
                         return (
                             <li key={comment.id}>
