@@ -24,6 +24,11 @@ class Content extends Component {
                 </form>
                 <ul></ul>
                 {this.state.name}
+
+                {/* Comment 페이지에서 props받아오기 */}
+                <h2 style={{ color: this.props.changeColor }}> Child Title </h2>
+                <h3 className={this.props.subTitleState ? "showSubTitle" : "hiddenSubTitle"}>보일까요? 안보일까요?</h3>
+                <button onClick={this.props.changeH3State}> H3 버튼 </button>
             </div>
         );
     }

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import CommentList from "../../components/CommentList/CommentList";
+import Content from "../../components/Content/Content";
+
 import "./Comment.scss";
 
 class Comment extends Component {
@@ -33,8 +35,16 @@ class Comment extends Component {
                     isLiked: "false",
                 },
             ],
+            childTitleColor: "red",
+            isH3Hidden: true,
         };
     }
+
+    handleH3State = () => {
+        this.setState({
+            isH3Hidden: !this.state.isH3Hidden,
+        });
+    };
 
     render() {
         return (
@@ -82,6 +92,10 @@ class Comment extends Component {
                     <input type="text" placeholder="Comment your..." />
                     <button>CMT</button>
                 </div>
+
+                {/* Content 컴포넌트로 props주기 */}
+                <h1> 현재 페이지는 Parent Component </h1>
+                <Content changeColor={this.state.childTitleColor} subTitleState={this.state.isH3Hidden} changeH3State={this.handleH3State} />
             </div>
         );
     }
