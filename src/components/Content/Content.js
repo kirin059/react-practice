@@ -14,6 +14,8 @@ class Content extends Component {
     };
 
     render() {
+        // 구조분해할당 해주기
+        const { changeColor, subTitleState, changeH3State } = this.props;
         return (
             <div className="content">
                 <form className="form">
@@ -26,9 +28,9 @@ class Content extends Component {
                 {this.state.name}
 
                 {/* Comment 페이지에서 props받아오기 */}
-                <h2 style={{ color: this.props.changeColor }}> Child Title </h2>
-                <h3 className={this.props.subTitleState ? "showSubTitle" : "hiddenSubTitle"}>보일까요? 안보일까요?</h3>
-                <button onClick={this.props.changeH3State}> H3 버튼 </button>
+                <h2 style={{ color: changeColor }}> Child Title </h2>
+                <h3 className={subTitleState ? "showSubTitle" : "hiddenSubTitle"}>보일까요? 안보일까요?</h3>
+                <button onClick={changeH3State}> H3 버튼 </button>
             </div>
         );
     }
