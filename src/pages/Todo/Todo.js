@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Content from "../../components/Content/Content";
+import Content from "./components/Content/Content";
 
 import "./Todo.scss";
 

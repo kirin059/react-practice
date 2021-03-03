@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import CommentList from "../../components/CommentList/CommentList";
-import Content from "../../components/Content/Content";
+import CommentList from "./components/CommentList/CommentList";
+import Content from "./components/Content/Content";
 
 import "./Comment.scss";
 
@@ -57,7 +57,7 @@ class Comment extends Component {
                                 key={comment.id} // key는 map함수를 돌리는 부분에만 작성해주기
                                 username={comment.username}
                                 content={comment.content}
-                                isLiked={comment.isLiked}
+                                isLiked={comment.isLiked} // 자식컴포넌트에 값을 넘길것이기 때문에 키={값} 의 형태로 보내주는것
                             />
                         );
                     })}
